@@ -1,4 +1,4 @@
-It is a self education note on quantum information.
+It is a self education note on quantum information. For rendering mathematical symbols, use KaTeX plugin in vscode.
 
 here are some references
 
