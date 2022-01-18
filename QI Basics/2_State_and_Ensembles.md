@@ -71,3 +71,30 @@ Composite system of Hilbert space $\mathscr{H}_A$ and $\mathscr{H}_B$ is represe
 State $\ket{\psi}_A$ in $\mathscr{H}_A$ and state $\ket{\phi}_B$ in $\mathscr{H}_B$ can be expressed as $\ket{\psi}_A\otimes\ket{\phi}_B$
 
 The tensor product operator $M_{A}\otimes N_{B}$ is the operator that applies $M_{A}$ to system A and $N_{B}$ to system B. 
+
+# The Qubit
+
+quantum bit {0,1} is the unit of quantum information. It is a orthogonal vector in the 2 dimensional Hilbert space. 
+
+General normalized state can be expressed as 
+
+$$
+a\ket{0}+b\ket{1}
+$$
+where $|a|^2+|b|^2=1$.
+
+An important question is: what is the difference between a qubit and classical probabilistic bit?
+
+In fact they are not the same for several reasons that we will explore. 
+
+In a nutshell, there is only one way to look at a bit, but there is more than one way to look at a qubit.
+
+# Spin 1/2
+
+The coefficient a and b is more than just the probabilities of the outcomes of a measurement in the {0, 1} basis. The relative phase of a and b has physical significance.
+
+A symmetry is a transformation that acts on a state, yet leaves all observable properties unchaged. In quantum mechanics, observations are measurements of Hermitian operators. If $A$ is measured in the state $\psi$, then $\ket{a}$ (the eigenvector of $A$) occurs with probability $|\braket{a|\psi}|^2$. A symmetry should leave these probabilities unchanged, when we rotate both the system and the apparatus if system has rotational symmetry.
+
+A symmetry is a mapping of vectors in Hilber space $\ket{\psi}\rightarrow\ket{\psi'}$ that preserves the inner product values $|\braket{\phi | \psi}|=|\braket{\phi' | \psi'}|$ for all $\ket{\phi}$ and $\ket{\psi}$.
+
+By Wigner's theorem, a mapping with this property can be chosen to be either unitary or anti-unitary by adopting suitable phase conventions.
