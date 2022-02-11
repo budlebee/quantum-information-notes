@@ -6,7 +6,7 @@ $$
 
 이때 $I_0$ 는 빔 중심에서 최대 Irradiance ($W/m^2$), r은 광축에서 부터의 반경, w(z)는 irradiance 가 $I_0$의 $1/e^2$ 일때의 레이저 빔 반경, P는 빔의 총 출력이다.
 
-![gaussian-beam-propagation-fig-1](./gaussian-beam-propagation-fig-1.png)
+![gaussian-beam-propagation-fig-1](./img/gaussian-beam-propagation-fig-1.png)
 
 w(z)는 z에 대한 함수인데, 회절로 인하여 가우시안 빔은 빔의 직경이 최소가 되는 beam waist ($w_0$)라고 불리는 곳에서 수렴하고 분산한다.
 
@@ -16,7 +16,7 @@ $$
 
 $\lambda$는 레이저의 파장이고 $\theta$ 는 원거리장(far field)의 발산각 근사치를 나타낸다. 빔 웨이스트로부터 거리가 멀어질수록 $\theta$의 정확성은 높아진다.
 
-![gaussian-beam-propagation-fig-2](./gaussian-beam-propagation-fig-2.png)
+![gaussian-beam-propagation-fig-2](./img/gaussian-beam-propagation-fig-2.png)
 
 빔 웨이스트 영역에서 빔의 직경 w(z)는 다음과 같이 정의된다.
 
