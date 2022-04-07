@@ -5,7 +5,11 @@
 
 ![beam_to_fiber.png](./img/beam_to_fiber.png)
 
-efficiency 를 높이기 위해선 fiber 코어에 들어가는 빔의 mode 가 일치해야 한다. 빔 사이즈를 키워야 할때가 있음.
+인풋 빔 사이즈 D, 포컬렝스 f, 빛의 파장 $\lambda$, 빔 웨이스트 $w_0$ 의 경우 렌즈로 인한 빔의 포커싱은 다음과 같다.
+
+$2w_0 = \frac{4\lambda}{\pi}\frac{f}{D}$
+
+커플러의 efficiency 를 높이기 위해선 fiber 코어에 들어가는 빔의 mode 가 일치해야 한다. 그래서 빔 사이즈를 키워야 할때가 있음. 
 
 ray optics 관점에서 보면, 빔을 코어 수평선과 너무 큰 각도로 집어넣으면 전반사가 안되니 loss.
 
