@@ -15,11 +15,11 @@ $$
 \hat{X_{2}} = \sqrt{\frac{1}{2\hbar w}}\hat{p} = \frac{1}{2i}(\hat{a}-\hat{a}^{\dagger})
 $$
 
-(일반화 좌표 q 와 모멘텀 p 에 적절한 수를 곱해 dimensionless 하게 만든 연산자라고 생각해도 된다.)
+(일반화 좌표 q 와 모멘텀 p 에 적절한 상수를 곱해 dimensionless 한 연산자가 됐다)
 
 이때 $\Delta q \Delta p \geq \frac{\hbar}{2}$ 에 대응되는 쿼드러쳐 연산자의 불확실성 정리는 $\Delta X_1 \Delta X_2 \geq \frac{1}{4}$ 이다.
 
-이때 결맞음 빛은 $\Delta X_1 = 1/2$, $\Delta X_2 = 1/2$ 인 minimum uncertainty light 이고, $\Delta X_1 \leq 1/2$ 또는 $\Delta X_2 \leq 1/2$ 인 경우를 압축광, 좀 더 정확히는 쿼드러쳐 압축광이라고 한다.
+결맞음 빛은 $\Delta X_1 = 1/2$, $\Delta X_2 = 1/2$ 인 minimum uncertainty light 이고, $\Delta X_1 \leq 1/2$ 또는 $\Delta X_2 \leq 1/2$ 인 경우를 압축광, 좀 더 정확히는 쿼드러쳐 압축광이라고 한다.
 
 ## Meaning of Quadrature Squeezing
 
@@ -39,7 +39,7 @@ $$
 \hat{E}(z=0,t) = \sqrt{\frac{2\hbar w }{\epsilon_0 V}}(\hat{X_1}\sin{wt}-\hat{X_2}\cos{wt})
 $$
 
-위 전기장은 $wt = (n+1/2)\pi$ 일때는 $\hat{X_1}$ 에 의해 결정되고 $wt = n\pi$ 일때는 $\hat{X_2}$ 에 의해 결정된다. 즉 위상이 90도 바뀔때마다 지배적인 연산자가 바뀌는데, 이런 이유때문에 쿼드러쳐 연산자라고 부른다.
+위 전기장은 $wt = (n+1/2)\pi$ 일때는 $\hat{X_1}$ 에 의해 결정되고 $wt = n\pi$ 일때는 $\hat{X_2}$ 에 의해 결정된다. 위상이 90도 바뀔때마다 지배적인 연산자가 바뀌는데, 이런 이유때문에 쿼드러쳐 연산자라고 부른다.
 
 > Quadrature 는 구분구적법, 90도 등의 의미를 가지는데, quadra 라는 접두어로 미루어 볼때 사분할에서 의미를 따온게 아닐까 싶다.
 
