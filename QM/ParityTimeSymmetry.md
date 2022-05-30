@@ -21,7 +21,7 @@ It does not change probability distribution in position space.
 
 In position space, momentum operator is represented by $-i\hbar \frac{\partial}{\partial x}$
 
-So defining time inversion operator as a complex conjugate operator is makes sense.
+So defining time inversion operator as a complex conjugate operator is to makes sense.
 
 $$
 \hat{T}\psi=\psi^*\newline
