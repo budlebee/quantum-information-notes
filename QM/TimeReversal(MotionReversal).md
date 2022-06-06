@@ -26,11 +26,14 @@ So defining time inversion operator as a complex conjugate operator is to makes 
 
 $$
 \hat{T}\psi=\psi^*\newline
- \hat{T^\dagger}\hat{x}\hat{T}=\hat{x}\newline
- \hat{T^\dagger}\hat{p}\hat{T}=-\hat{p}
+ \hat{T}\hat{x}\hat{T^{-1}}=\hat{x}\newline
+ \hat{T}\hat{p}\hat{T^{-1}}=-\hat{p}\newline
+  \hat{T}\hat{\sigma}\hat{T^{-1}}=-\hat{\sigma}
  $$
+ where $\sigma$ is a spin angular momentum.
 
-## Anti Unitrarity
+
+## Anti Unitary
 
 The transformation $U_A\ket{a} = \ket{a'}$, $U_A\ket{b} = \ket{b'}$ is said to be antiunitary if 
 
@@ -40,8 +43,6 @@ U_A(c_1\ket{a}+c_2\ket{b})=c^*_1U_A\ket{a}+c^*_2U_A\ket{b}
 $$
 
 the second line is a property of antilinear operator.
-
-Antiunitary operator can be written as $U_A = UK$, where $K$ is complex conjugate operator.
 
 For infinitesimal time evolution $\delta t$, 
 $$
@@ -61,6 +62,46 @@ $\bra{b}\hat{T}\ket{a}$ is always to be understood as $\bra{b}(\hat{T}\ket{a})$,
 
 In fact, we do not even attempt to define $\bra{b}\hat{T}$. Dirac bra-ket notation was invented to handle linear operators, not antilinear operators. 
 
+Antiunitary operator can be written as $U_A = UK$, where $U$ is an unitary operator and $K$ is a complex conjugate operator.
+
+## Structure of $U$ in $T=UK$
+
+$U$ is a basis dependent.
+
+### 1. Spinless particle
+
+For a spinless particle, only variables are $x$ and $p$. By definition,
+
+$$
+TxT^{-1} = UKxK^{-1}U^{-1} = UxU^{-1}=x \newline
+TpT^{-1} = UKpK^{-1}U^{-1} = U(-p)U^{-1}=-p \newline
+$$
+
+Thus, $U=I$, $T=K$ in the position representation for a spinkess particle.
+
+### 2. Spin 1/2 particle
+
+For a spin 1/2, $T\overrightarrow{\sigma}T^{-1}=-\overrightarrow{\sigma}$.
+
+$$
+K\sigma_x K^{-1}=\sigma_x \newline
+K\sigma_y K^{-1}=-\sigma_y \newline
+K\sigma_z K^{-1}=\sigma_z \newline
+$$
+
+Thus, $T=\lambda\sigma_y K$, where the $\lambda$ is a arbitrary phase. Choosing the $\lambda$ does not changes the physics. For a convinience, $T=-i\sigma_y K$
+
+### 3. pseudo-spin system
+
+In a general two-level system, like a qubit, time reversal is a complex conjugate. Let consider horizontal polarization represents $\ket{\uparrow}$ and vertical polarization represents $\ket{\downarrow}$. Even if motion is reversed, the polarization is unchanged.
+
+
+
+
+
 ## reference
 
-Modern quantum mechanics, Sakurai
+- Modern quantum mechanics, 3rd edition, Chapter 4, J.J. Sakurai
+
+- Embedded Random Matrix Ensembles in Quantum Physics (https://link.springer.com/content/pdf/bbm%3A978-3-319-04567-2%2F1.pdf)
+

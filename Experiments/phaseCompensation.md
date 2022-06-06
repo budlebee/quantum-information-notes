@@ -5,7 +5,7 @@ $$
 U_{QHQ} = -e^{2i\theta}
 \begin{bmatrix}
 1&&0\\
-0&& e^{-4i\theta}
+0&& -e^{-4i\theta}
 \end{bmatrix}
 $$
 
