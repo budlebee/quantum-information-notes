@@ -11,14 +11,22 @@ $U$ means photons created from upper slit and $D$ means photons created from low
 Idlers photons meet some beam splitters and is directed to the four detectors. We get the state
 
 $$
-\ket{U\nearrow}(\frac{1}{2\sqrt{2}}\ket{1}+\frac{1}{2\sqrt{2}}\ket{2} +\frac{1}{2}\ket{4})\newline
-+\ket{L\nearrow}(\frac{1}{2\sqrt{2}}\ket{1}+\frac{1}{2\sqrt{2}}\ket{2} +\frac{1}{2}\ket{3})
+\ket{U\nearrow}(\frac{1}{2\sqrt{2}}\ket{1}+\frac{1}{2\sqrt{2}}\ket{2} +\frac{1}{2}\ket{3})\newline
++\ket{L\nearrow}(\frac{1}{2\sqrt{2}}\ket{1}-\frac{1}{2\sqrt{2}}\ket{2} +\frac{1}{2}\ket{4})
 $$
 
-If detector D4 is clicked, then state is $\ket{U\nearrow}$. This state has not interference property. 
+If detector D3 is clicked, then state is $\ket{U\nearrow}$. This state has not interference property. 
 
 But detector D1 is clicked, then state is $\frac{1}{\sqrt{2}}(\ket{U\nearrow}+\ket{L\nearrow})$. This state has a interference property.
 
+## $\pi$ phase shift
+
+$$
+R_{01}\propto sinc^{2}(x\pi a/\lambda f)\cos^2{(x\pi d/\lambda f)}\newline
+R_{02}\propto sinc^{2}(x\pi a/\lambda f)\sin^2{(x\pi d/\lambda f)}
+$$
+
+where $a$ is the width of each slit (equal width), $d$ is the distance between the center of each slit, $\lambda$ is the wavelength of the signal, $f$ is the focal length of lens.
 
 ## Conditional probabilities
 
