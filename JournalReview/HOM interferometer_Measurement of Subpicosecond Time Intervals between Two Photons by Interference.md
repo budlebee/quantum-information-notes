@@ -28,7 +28,7 @@ $$
 Two-photon state produced by SPDC crystal is 
 
 $$
-\ket{\psi}=\int{dw \phi(w_1,w_2)\ket{w_1,w_2}}
+\ket{\psi}=\int{dw_1 dw_2 \phi(w_1,w_2)\ket{w_1,w_2}}
 $$
 
 where $\phi$ is some weight function and $w_0=w_1+w_2$.
