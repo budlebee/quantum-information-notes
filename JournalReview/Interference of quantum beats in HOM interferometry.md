@@ -39,3 +39,5 @@ $$
 $$
 
 where $g_1(w_1)=e^{-(w_1-w_a)^2/2\sigma_1^2}$ and $g_2(w_2)=e^{-(w_2-w_b)^2/2\sigma_2^2}$ represent optical spectral functions of filters in front of detectors D1 and D2
+
+![HOM_beating2](./fig/HOM_beating2.jpeg)
