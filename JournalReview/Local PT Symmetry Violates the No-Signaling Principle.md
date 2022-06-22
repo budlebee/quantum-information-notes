@@ -63,7 +63,7 @@ U(t)=e^{-itH}=e^{-its\cos{\alpha}\bold{\sigma \cdot\hat{n}}}=e^{-it'{\sigma \cdo
 =\frac{1}{\cos{\alpha}}
 \begin{bmatrix}
 \cos{(t'-\alpha)}&-i\sin{t'}\\
-i\sin{t'}&\cos{(t'+\alpha)}
+-i\sin{t'}&\cos{(t'+\alpha)}
 \end{bmatrix} 
 $$
 where $\hbar=1$ and $t'=ts\cos{\alpha}$ for convinience.
