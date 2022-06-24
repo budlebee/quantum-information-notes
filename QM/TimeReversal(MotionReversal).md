@@ -56,7 +56,15 @@ $$
 -iH\hat{T}\ket{\psi}=\hat{T}iH\ket{\psi}
 $$
 
-This is why time reversal is anti unitary.
+Suppose that $T$ is a linear operator. Then one could cancel the factors $i$ to obtain $-HT=TH$. Acting on an energy eigenstate $\ket{E_n}$, we would conclude that
+
+$$
+HT\ket{E_n} = -TH\ket{E_n} = -E_n T\ket{E_n}
+$$
+
+which implies that if eigenvalue of $\ket{E_n}$ is $E_n$, then eigenvalue of $T\ket{E_n}$ is $-E_n$. This result imply that one can generate arbitrary negative energy by choosing a state with arbitrary large positive energy. The absence of a groud state is unphysical. This is why time reversal is to be anti linear and anti unitary.
+
+By anti linear properties, $TiH=-iTH=-iHT$, $THT^{-1}=H$. if H is a Hermitian, then we can say $THT^{-1}=H^{\dagger}$.
 
 $\bra{b}\hat{T}\ket{a}$ is always to be understood as $\bra{b}(\hat{T}\ket{a})$, never as $(\bra{b}\hat{T})\ket{a}$.
 
@@ -105,3 +113,4 @@ In a general two-level system, like a qubit, time reversal is a complex conjugat
 
 - Embedded Random Matrix Ensembles in Quantum Physics (https://link.springer.com/content/pdf/bbm%3A978-3-319-04567-2%2F1.pdf)
 
+- http://scipp.ucsc.edu/~haber/ph215/TimeReversal.pdf
