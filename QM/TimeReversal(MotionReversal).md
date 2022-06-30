@@ -4,7 +4,7 @@ Time reversal is a misnomer; more appropriate term is motion reversal. Indeed, E
 
 In classical view, time reversal means $x\rightarrow x,p\rightarrow -p.$
 
-In quantum view, time reversal operator is complex conjugation operator. 
+In quantum view, time reversal operator has complex conjugation operation. 
 
 $$
 \hat{T}\psi(x,t)=\psi^*(x,-t)
