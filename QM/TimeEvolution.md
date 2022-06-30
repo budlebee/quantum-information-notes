@@ -15,7 +15,7 @@ $$
 
 $$
 P(\Psi\rightarrow\Phi) = |\braket{U\Phi|U\Psi}|^2
-\newline
+\\
 =|\braket{\Phi|U^{\dagger}U|\Psi}|^2=|\braket{\Phi|\Psi}|^2
 $$
 

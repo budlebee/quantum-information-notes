@@ -46,7 +46,7 @@ For spatially coherent light from a small area of the source, second correlation
 
 $$
 g^{(2)}(\tau) = \frac{<\varepsilon^*(t)\varepsilon^*(t+\tau)\varepsilon(t)\varepsilon(t+\tau)>}{<\varepsilon^*(t)\varepsilon^*(t+\tau)><\varepsilon(t)\varepsilon(t+\tau)>}
-\newline
+\\
 =\frac{<I(t)I(t+\tau)>}{<I(t)><I(t+\tau)>}
 $$
 

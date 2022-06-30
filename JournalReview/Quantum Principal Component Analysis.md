@@ -1,5 +1,5 @@
 $$
-Tr_\rho[e^{-iS\triangle t}\rho\otimes\sigma e^{iS\triangle t}]=Tr_\rho[(1-iS\triangle t)\rho\otimes\sigma(1+iS\triangle t)+O(\triangle t^2)]\newline
+Tr_\rho[e^{-iS\triangle t}\rho\otimes\sigma e^{iS\triangle t}]=Tr_\rho[(1-iS\triangle t)\rho\otimes\sigma(1+iS\triangle t)+O(\triangle t^2)]\\
 =Tr_\rho[\rho\otimes\sigma]-i\triangle tTr_\rho[[S,\rho\otimes\sigma]] +Tr_\rho[O'(\triangle t^2)]
 
 $$
@@ -10,8 +10,8 @@ $Tr_\rho$ traces out $\rho$. $[S,\rho\otimes\sigma]$ is commutation relation.
 Thus, 
 
 $$
-Tr_\rho[\rho\otimes\sigma]-i\triangle tTr_\rho[[S,\rho\otimes\sigma]] +Tr_\rho[O'(\triangle t^2)]\newline
-=\sigma-i\triangle t[\rho,\sigma]+Tr_\rho [O'(\triangle t^2)]\newline
+Tr_\rho[\rho\otimes\sigma]-i\triangle tTr_\rho[[S,\rho\otimes\sigma]] +Tr_\rho[O'(\triangle t^2)]\\
+=\sigma-i\triangle t[\rho,\sigma]+Tr_\rho [O'(\triangle t^2)]\\
 \simeq (1-i\rho \triangle t)\sigma(1+i\rho\triangle  t)\simeq e^{-i\rho\triangle  t}\sigma e^{i\rho\triangle  t}
 $$
 
@@ -23,8 +23,8 @@ By applying infinitesimal swap operation on $\rho\otimes\sigma$, we can construc
 $\ket{\chi_i}$ is a eigenstate of $\rho$ and of $e^{-i\rho t}$. 
 $$
 \rho = \sum_i r_i\ket{\chi_i}\bra{\chi_i}
- \newline
-\rho\ket{\chi_i} =r_i\ket{\chi_i}\newline
+ \\
+\rho\ket{\chi_i} =r_i\ket{\chi_i}\\
 e^{-i\rho t}\ket{\chi_i} = e^{-ir_i t}\ket{\chi_i}
 $$
 

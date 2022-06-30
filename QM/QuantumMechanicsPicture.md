@@ -55,13 +55,13 @@ $$
 
 상호작용 묘사의 상태함수를 미분하면 다음과 같다.
 $$
-\frac{\partial }{\partial t}\ket{\psi_I(t)} = \frac{iH_{S,0}}{\hbar} e^{iH_{S,0}t/\hbar}\ket{\psi_S(t)} + e^{iH_{S,0}t/\hbar}\frac{\partial}{\partial t}\ket{\psi_S(t)} \newline
+\frac{\partial }{\partial t}\ket{\psi_I(t)} = \frac{iH_{S,0}}{\hbar} e^{iH_{S,0}t/\hbar}\ket{\psi_S(t)} + e^{iH_{S,0}t/\hbar}\frac{\partial}{\partial t}\ket{\psi_S(t)} \\
 
-\newline
+\\
 
-=\frac{iH_{S,0}}{\hbar} e^{iH_{S,0}t/\hbar}\ket{\psi_S(t)} - e^{iH_{S,0}t/\hbar} \frac{iH}{\hbar} e^{iHt/\hbar}\ket{\psi_S(0)} \newline
+=\frac{iH_{S,0}}{\hbar} e^{iH_{S,0}t/\hbar}\ket{\psi_S(t)} - e^{iH_{S,0}t/\hbar} \frac{iH}{\hbar} e^{iHt/\hbar}\ket{\psi_S(0)} \\
 
-=\frac{i}{\hbar}[H_{S,0}-e^{iH_{S,0}t/\hbar}(H_{S,0}+H_{S,1})e^{-iH_{S,0}t/\hbar}]\ket{\psi_I(t)} \newline
+=\frac{i}{\hbar}[H_{S,0}-e^{iH_{S,0}t/\hbar}(H_{S,0}+H_{S,1})e^{-iH_{S,0}t/\hbar}]\ket{\psi_I(t)} \\
 $$
 
 이때 $H_{S,0}$ 와 $e^{iH_{S,0}t/\hbar}$ 은 서로 commute 하고, 또 $H_{I,1}=e^{iH_{S,0}t/\hbar}H_{S,1}e^{-iH_{S,0}t/ \hbar}$ 라고 정의 한다면 다음과 같다.

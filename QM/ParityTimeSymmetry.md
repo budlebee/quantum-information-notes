@@ -4,7 +4,7 @@ Hamiltonian H 가 PT 와 commute 한다면 [H,PT] = 0 이라면, H 는 real eige
 
 ## Parity operator P
 
-space inversion operator. $\hat{P}\psi(x)=\psi(-x).\newline
+space inversion operator. $\hat{P}\psi(x)=\psi(-x).\\
  \hat{P^\dagger}\hat{x}\hat{P}=-\hat{x}$
 
 ## Time inversion operator T
@@ -24,8 +24,8 @@ In position space, momentum operator is represented by $-i\hbar \frac{\partial}{
 So defining time inversion operator as a complex conjugate operator is to makes sense.
 
 $$
-\hat{T}\psi=\psi^*\newline
- \hat{T^\dagger}\hat{x}\hat{T}=\hat{x}\newline
+\hat{T}\psi=\psi^*\\
+ \hat{T^\dagger}\hat{x}\hat{T}=\hat{x}\\
  \hat{T^\dagger}\hat{p}\hat{T}=-\hat{p}
  $$
 

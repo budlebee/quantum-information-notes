@@ -27,14 +27,14 @@ $$
 The biphoton state that interferes the last beam splitter should be written as:
 
 $$
-\ket{\psi} = \int dw_s dw_i (e^{-iw_s\tau_1})(1+e^{-iw_s\tau_2})(1+e^{-iw_i\tau_2})\newline
+\ket{\psi} = \int dw_s dw_i (e^{-iw_s\tau_1})(1+e^{-iw_s\tau_2})(1+e^{-iw_i\tau_2})\\
 \times\phi(w_s, w_i)\hat{a}^{\dagger}_s(w_s) \hat{a}^{\dagger}_i (w_i)\ket{0}
 $$
 
 Electric field operators that are related to photon detection at detector D1 and D2 are defined as:
 
 $$
-\hat{E}^{(+)}_{1}(t_1)\sim \int dw_1 \hat{a}_1(w_1)g_1(w_1)e^{-iw_1 t_1}\newline
+\hat{E}^{(+)}_{1}(t_1)\sim \int dw_1 \hat{a}_1(w_1)g_1(w_1)e^{-iw_1 t_1}\\
 \hat{E}^{(+)}_{2}(t_2)\sim \int dw_2 \hat{a}_2(w_2)g_2(w_2)e^{-iw_2 t_2}
 $$
 
