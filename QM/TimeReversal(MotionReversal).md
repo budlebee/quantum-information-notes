@@ -22,7 +22,7 @@ Suppose $\psi(x,t)=e^{-iEt/\hbar}\psi(x,0)$ is a solution. We can verify that $\
 
 In position space, momentum operator is represented by $-i\hbar \frac{\partial}{\partial x}$
 
-So defining time inversion operator as a complex conjugate operator is to makes sense.
+So time inversion operator has a complex conjugation operator is to makes sense.
 
 $$
 \hat{T}\psi=\psi^*\\
