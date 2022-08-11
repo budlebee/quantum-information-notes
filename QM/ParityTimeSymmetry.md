@@ -36,7 +36,7 @@ time inversion operator is anti-unitary operator. Anti unitray operator $U^{\dag
 Let $\psi$ is a common eigenstate of $PT$ and $H$.
 
 
-## example
+## example 1
 
 $$
 H=\begin{bmatrix}
@@ -47,7 +47,21 @@ $$
 $r,\theta,s$ are real. Above is a PT symmetric, $[H,PT]=0$.
 
 $$
-PTH = HPT \rightarrow PTHT^{-1}=HP\rightarrow PTHT^{\dagger}=HP = PH^*
+PTH = HPT \rightarrow PTHT^{-1}=HP\rightarrow PH^{\dagger}=HP
 $$
 
 In 2-dimension, P operator is pauli x operator. 
+
+## example 2
+
+$$
+H=\begin{bmatrix}
+-ig && \kappa\\
+\kappa && ig
+\end{bmatrix}
+$$
+from *Observation of parity-time symmetry in optics* paper. g is site dissipation / amplification constant. $\kappa$ is coupling constant.
+
+eigenvalues $\lambda =\pm \kappa\sqrt{1-(g/\kappa)^2}=\pm\kappa\cos{\theta_{PT}}$, where $g/\kappa \equiv \sin{\theta_{PT}}$. corresponding eigenstates are $[1,\pm e^{\pm i\theta_{PT}}]^{T}$ in PT unbroken phase when $g/\kappa < 1$.
+
+In the PT broken phase when $g/\kappa > 1$, eigenvalues $\pm i\kappa \sinh{\theta_b}$, where $g/\kappa\equiv \cosh{\theta_b}$. corresponding eigenstates are $[1, ie^{\pm\theta_b}]^{T}$
