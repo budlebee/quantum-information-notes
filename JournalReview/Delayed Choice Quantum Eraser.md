@@ -11,7 +11,7 @@ $U$ means photons created from upper slit and $D$ means photons created from low
 Idlers photons meet some beam splitters and is directed to the four detectors. We get the state
 
 $$
-\ket{U\nearrow}(\frac{1}{2\sqrt{2}}\ket{1}+\frac{1}{2\sqrt{2}}\ket{2} +\frac{1}{2}\ket{3})\newline
+\ket{U\nearrow}(\frac{1}{2\sqrt{2}}\ket{1}+\frac{1}{2\sqrt{2}}\ket{2} +\frac{1}{2}\ket{3})\\
 +\ket{L\nearrow}(\frac{1}{2\sqrt{2}}\ket{1}-\frac{1}{2\sqrt{2}}\ket{2} +\frac{1}{2}\ket{4})
 $$
 
@@ -22,7 +22,7 @@ But detector D1 is clicked, then state is $\frac{1}{\sqrt{2}}(\ket{U\nearrow}+\k
 ## $\pi$ phase shift
 
 $$
-R_{01}\propto sinc^{2}(x\pi a/\lambda f)\cos^2{(x\pi d/\lambda f)}\newline
+R_{01}\propto sinc^{2}(x\pi a/\lambda f)\cos^2{(x\pi d/\lambda f)}\\
 R_{02}\propto sinc^{2}(x\pi a/\lambda f)\sin^2{(x\pi d/\lambda f)}
 $$
 
@@ -61,7 +61,7 @@ $$
 The chance that $O_A=a_I$ and $O_B=b_J$ is
 
 $$
-P(O_A=a_I\cap O_B=b_J)=P(O_A=a_I|O_B=b_J)P(O_B=b_J) =|\alpha_{IJ}|^2 \newline
+P(O_A=a_I\cap O_B=b_J)=P(O_A=a_I|O_B=b_J)P(O_B=b_J) =|\alpha_{IJ}|^2 \\
 =P(O_B=b_J|O_A=a_I)P(O_A=a_I)
 $$
 

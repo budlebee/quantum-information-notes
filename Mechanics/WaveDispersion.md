@@ -3,8 +3,8 @@
 Consider a superposition of two waves:
 
 $$
-\psi_1(x,t) = Ae^{i(kx-wt)}\newline
-\psi_2(x,t) = Ae^{i((k+\Delta k)x-(w+\Delta w)t)}\newline
+\psi_1(x,t) = Ae^{i(kx-wt)}\\
+\psi_2(x,t) = Ae^{i((k+\Delta k)x-(w+\Delta w)t)}\\
 \psi = \psi_1 + \psi_2
 $$
 
@@ -29,7 +29,7 @@ Left cosine function is envelope.
 Consider a superposition of n waves and get a limit $n\rightarrow \infty$
 
 $$
-\psi(x,t) = \sum_{s=1}^{n} A_s e^{i(k_s x -w_s t)} \newline
+\psi(x,t) = \sum_{s=1}^{n} A_s e^{i(k_s x -w_s t)} \\
 \rightarrow \int_{-\infty}^{\infty}A(k)e^{i(kx-w(k)t)}
 $$
 
@@ -40,7 +40,7 @@ w(k) = w(k_0) + \frac{dw}{dk}\times(k-k_0)+... = w_0+w_0'\times(k-k_0)+...
 $$
 
 $$
-kx-wt = k_0 x - k_0 x + kx -w_o t -w_0' (k-k_0)t\newline
+kx-wt = k_0 x - k_0 x + kx -w_o t -w_0' (k-k_0)t\\
 = (k_0 x - w_0 t) + (k-k_0)(k-w_0' t)
 $$
 
@@ -53,15 +53,15 @@ $e^{i(k-k_0)(x-w_0't)}$ part is effective amplitude that varies smoothly.
 If effective amplitude phase is constant, 
 
 $$
-x-w_0't = const\newline
-dx - w_0'dt = 0\newline
+x-w_0't = const\\
+dx - w_0'dt = 0\\
 \frac{dx}{dt} = w_0' = \frac{dw}{dk} \equiv v_g 
 $$
 
 Phase velocity $v=w/k$, so $k=w/v$.
 
 $$
-\frac{1}{v_g}=\frac{d}{dw}(w/v)|_0 = \frac{v_0 - wdv/dw|_0}{v_0^2} \newline
+\frac{1}{v_g}=\frac{d}{dw}(w/v)|_0 = \frac{v_0 - wdv/dw|_0}{v_0^2} \\
 v_g = \frac{v_0}{1-\frac{w_0}{v_0}dv/dw|_0}
 $$
 

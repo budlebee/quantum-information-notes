@@ -57,9 +57,9 @@ Then time evolution is given by
 
 $$
 U(t)=e^{-itH}=e^{-its\cos{\alpha}\bold{\sigma \cdot\hat{n}}}=e^{-it'{\sigma \cdot\hat{n}}}
-\newline
+\\
 =\cos{t'}-i\sin{t'}{\sigma \cdot\hat{n}}
-\newline
+\\
 =\frac{1}{\cos{\alpha}}
 \begin{bmatrix}
 \cos{(t'-\alpha)}&-i\sin{t'}\\

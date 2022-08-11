@@ -1,42 +1,81 @@
-# PT-symmetry Hamiltonian ? 
+# PT-symmetric Hamiltonian
 
-Hamiltonian H 가 PT 와 commute 한다면 [H,PT] = 0 이라면, H 는 real eigenvalue spectra 를 가진다. 
+If the Hamiltonian H commute with PT operator($[H,PT]=0$), then Hamiltonian have real energy eigenvalue spectra, even it is not Hermitian. 
 
 ## Parity operator P
 
-space inversion operator. $\hat{P}\psi(x)=\psi(-x).\newline
- \hat{P^\dagger}\hat{x}\hat{P}=-\hat{x}$
+P is parity inversion operator. In real space, parity inversion makes $(x,y,z) \rightarrow (-x,-y,-z)$. Quantum mechanically, 
+$$
+\hat{P}\psi(x)=\psi(-x)\\
+ \hat{P}\hat{x}\hat{P^\dagger}=-\hat{x}
+ $$
+In 2x2 spin space, parity inversion is given by spin inversion operator, pauli X gate.
+$$
+\hat{P} = \begin{bmatrix}
+0&1\\
+1&0
+\end{bmatrix}=\sigma_{x}
+$$
 
 ## Time inversion operator T
 
+Time reversal is a misnomer; more appropriate term is motion reversal. Indeed, E. Wigner, who formulated time reversal, used "reversal of motion".
+
 In classical view, time inversion means $x\rightarrow x,p\rightarrow -p.$
 
-In quantum view, time inversion operator is complex conjugation operator. 
+In quantum view, time inversion operator has complex conjugation operation. 
 
 $$
 \hat{T}\psi(x)=\psi^*(x)
 $$
 
-It does not change probability distribution in position space.
+Time reversal operator is system dependent; it is defined differently in spinless system and spin half system.
 
-In position space, momentum operator is represented by $-i\hbar \frac{\partial}{\partial x}$
-
-So defining time inversion operator as a complex conjugate operator is to makes sense.
+From classical analogy, operator transforms by time reversal are given by
 
 $$
-\hat{T}\psi=\psi^*\newline
- \hat{T^\dagger}\hat{x}\hat{T}=\hat{x}\newline
- \hat{T^\dagger}\hat{p}\hat{T}=-\hat{p}
+\hat{T}\psi=\psi^*\\
+ \hat{T}\hat{x}\hat{T^{-1}}=\hat{x}\\
+ \hat{T}\hat{p}\hat{T^{-1}}=-\hat{p}\\
+  \hat{T}\hat{\sigma}\hat{T^{-1}}=-\hat{\sigma}
  $$
 
-time inversion operator is anti-unitary operator. Anti unitray operator $U^{\dagger}_{A} U_A=I$. But $\braket{U_A\phi |U_A\psi}=\braket{\psi|\phi}$, not $\braket{\phi|\psi}$. And $U_A \lambda \ket{\psi}=\lambda^* U_A\ket{\psi}$
+ where $\sigma$ is a spin angular momentum.
 
-## How PT symmetric hamiltonian has real eigenvalue spectra? (tba)
+Time inversion operator is anti-unitary operator. Anti unitray operator $U^{\dagger}_{A} U_A=I$. But $\braket{U_A\phi |U_A\psi}=\braket{\psi|\phi}$, not $\braket{\phi|\psi}$. And $U_A \lambda \ket{\psi}=\lambda^* U_A\ket{\psi}$
+
+By properties of antilinearity, we can say $THT^{-1}=H^{\dagger}$.
+
+More details and motivations about time reversal are in my "Time Reversal" note.
+
+## Simple proof that PT symmetric Hamiltonian has real real energy eigenvalue spectra
 
 Let $\psi$ is a common eigenstate of $PT$ and $H$.
 
+PT symmetry $[H,PT]=0$ means $HPT\ket{\psi}=PTH\ket{\psi}$.
+
+ Let eigenvalue of PT operator is a $\lambda$.
+
+ Left hand side is $\rightarrow H\lambda\ket{\psi}=E\lambda\ket{\psi}$.
+
+ Right hand side is $PTE\ket{\psi}=E^* PT\ket{\psi}=E^*\lambda\ket{\psi}$, because $T$ operator is antilinear operator.
+
+ By PT symmetry condition, left hand side = right hand isde. It meanse $E^* = E$. PT symmetric Hamiltonians have real energy eigenvalue spectra.
+
+ Detailed proof are in reference *PT-symmetry in optics*.
+
 
 ## example 1
+
+if and only-if condition of PT symmetric Hamiltonian is as follows:
+
+$$
+PTH(PT)^{-1} = PTHT^{-1}P^{-1}=PH^{\dagger}P^{-1}=H
+$$
+
+Because $P^{-1}=P$, we can say $PH^{\dagger}P^{-1}=H$ is the if and only-if condition of PT symmetric Hamiltonian.
+
+Some 2x2 Hamiltonian is PT symmetric. For example,
 
 $$
 H=\begin{bmatrix}
@@ -44,7 +83,8 @@ re^{i\theta} && s\\
 s && re^{-i\theta}
 \end{bmatrix}
 $$
-$r,\theta,s$ are real. Above is a PT symmetric, $[H,PT]=0$.
+
+$r,\theta,s$ are real quantity. Above is a PT symmetric Hamiltonian, $[H,PT]=0$.
 
 $$
 PTH = HPT \rightarrow PTHT^{-1}=HP\rightarrow PH^{\dagger}=HP
@@ -65,3 +105,13 @@ from *Observation of parity-time symmetry in optics* paper. g is site dissipatio
 eigenvalues $\lambda =\pm \kappa\sqrt{1-(g/\kappa)^2}=\pm\kappa\cos{\theta_{PT}}$, where $g/\kappa \equiv \sin{\theta_{PT}}$. corresponding eigenstates are $[1,\pm e^{\pm i\theta_{PT}}]^{T}$ in PT unbroken phase when $g/\kappa < 1$.
 
 In the PT broken phase when $g/\kappa > 1$, eigenvalues $\pm i\kappa \sinh{\theta_b}$, where $g/\kappa\equiv \cosh{\theta_b}$. corresponding eigenstates are $[1, ie^{\pm\theta_b}]^{T}$
+
+
+## references
+
+- Real Spectra in Non-Hermitian Hamiltonians Having PT Symmetry(1998), Carl M. Bender, Stefan Boettcher, prl 80, 24
+- PT-symmetry in optics(2014), A.A. Zyablovsky et al.
+- Modern quantum mechanics 3rd edition Chapter 4, J.J. Sakurai
+- PT symmetry in quantum physics: from a mathematical curiosity to optical experiments(2016), Carl M. Bender
+
+

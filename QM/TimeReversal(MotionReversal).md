@@ -4,7 +4,7 @@ Time reversal is a misnomer; more appropriate term is motion reversal. Indeed, E
 
 In classical view, time reversal means $x\rightarrow x,p\rightarrow -p.$
 
-In quantum view, time reversal operator is complex conjugation operator. 
+In quantum view, time reversal operator has complex conjugation operation. 
 
 $$
 \hat{T}\psi(x,t)=\psi^*(x,-t)
@@ -22,12 +22,12 @@ Suppose $\psi(x,t)=e^{-iEt/\hbar}\psi(x,0)$ is a solution. We can verify that $\
 
 In position space, momentum operator is represented by $-i\hbar \frac{\partial}{\partial x}$
 
-So defining time inversion operator as a complex conjugate operator is to makes sense.
+So time inversion operator has a complex conjugation operator is to makes sense.
 
 $$
-\hat{T}\psi=\psi^*\newline
- \hat{T}\hat{x}\hat{T^{-1}}=\hat{x}\newline
- \hat{T}\hat{p}\hat{T^{-1}}=-\hat{p}\newline
+\hat{T}\psi=\psi^*\\
+ \hat{T}\hat{x}\hat{T^{-1}}=\hat{x}\\
+ \hat{T}\hat{p}\hat{T^{-1}}=-\hat{p}\\
   \hat{T}\hat{\sigma}\hat{T^{-1}}=-\hat{\sigma}
  $$
  where $\sigma$ is a spin angular momentum.
@@ -38,7 +38,7 @@ $$
 The transformation $U_A\ket{a} = \ket{a'}$, $U_A\ket{b} = \ket{b'}$ is said to be antiunitary if 
 
 $$
-\braket{b'|a'} = \braket{b|a}^*=\braket{a|b} \newline
+\braket{b'|a'} = \braket{b|a}^*=\braket{a|b} \\
 U_A(c_1\ket{a}+c_2\ket{b})=c^*_1U_A\ket{a}+c^*_2U_A\ket{b}
 $$
 
@@ -81,8 +81,8 @@ $U$ is a basis dependent.
 For a spinless particle, only variables are $x$ and $p$. By definition,
 
 $$
-TxT^{-1} = UKxK^{-1}U^{-1} = UxU^{-1}=x \newline
-TpT^{-1} = UKpK^{-1}U^{-1} = U(-p)U^{-1}=-p \newline
+TxT^{-1} = UKxK^{-1}U^{-1} = UxU^{-1}=x \\
+TpT^{-1} = UKpK^{-1}U^{-1} = U(-p)U^{-1}=-p \\
 $$
 
 Thus, $U=I$, $T=K$ in the position representation for a spinkess particle.
@@ -92,9 +92,9 @@ Thus, $U=I$, $T=K$ in the position representation for a spinkess particle.
 For a spin 1/2, $T\overrightarrow{\sigma}T^{-1}=-\overrightarrow{\sigma}$.
 
 $$
-K\sigma_x K^{-1}=\sigma_x \newline
-K\sigma_y K^{-1}=-\sigma_y \newline
-K\sigma_z K^{-1}=\sigma_z \newline
+K\sigma_x K^{-1}=\sigma_x \\
+K\sigma_y K^{-1}=-\sigma_y \\
+K\sigma_z K^{-1}=\sigma_z \\
 $$
 
 Thus, $T=\lambda\sigma_y K$, where the $\lambda$ is a arbitrary phase. Choosing the $\lambda$ does not changes the physics. For a convinience, $T=-i\sigma_y K$
