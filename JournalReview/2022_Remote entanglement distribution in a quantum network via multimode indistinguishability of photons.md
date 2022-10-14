@@ -1,5 +1,5 @@
 
-initial state (omit dagger for convenience)
+initial state (dagger is omitted for convenience)
 
 $$
 a_Ha_Vb_Hb_V\ket{vac}
