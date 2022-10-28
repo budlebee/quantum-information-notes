@@ -79,3 +79,42 @@ $$
 (m_{1,H}m_{2,H}-m_{1,V}m_{2,V})(c_Hd_V+c_Vd_H)]
 $$
 가 돼서, 디텍터 클릭만을 통해서는 각 상태를 구분할 수 없게 된다.
+
+### 만약 dump 포트까지 활용한다면?
+
+![](./fig/remoteEnt_withoutDump.png)
+
+
+$$
+\frac{1}{4}(m_H+c_H)(m_V+c_V)(m_H+d_H)(m_V+d_V)
+$$
+
+After second BS, 
+
+$$
+\frac{1}{4}[\frac{1}{\sqrt{2}}(m_{1,H}+m_{2,H})+c_H]
+\newline
+\times [\frac{1}{\sqrt{2}}(m_{1,V}+m_{2,V})+c_V]
+\newline
+\times [\frac{1}{\sqrt{2}}(m_{1,H}-m_{2,H})+d_H]
+\newline
+\times [\frac{1}{\sqrt{2}}(m_{1,V}-m_{2,V})+d_V]
+$$
+
+we see 4-fold coincidence. let's do postselection.
+
+$$
+\frac{1}{8}[(m_{1,H}+m_{2,H})(m_{1,H}-m_{2,H})c_V d_V 
+\newline
++ (m_{1,V}+m_{2,V})(m_{1,V}-m_{2,V})c_H d_H]
+\newline
++ (m_{1,H}+m_{2,H})(m_{1,V}-m_{2,V})c_V d_H \newline
++ (m_{1,V}+m_{2,V})(m_{1,H}-m_{2,H})c_H d_V $$
+
+$$
+\rightarrow\frac{1}{8}[m_{1,H}m_{1,V}(c_V d_H+c_H d_V)
+\newline
+-m_{2,H}m_{2,V}(c_V d_H+c_H d_V)\newline
++m_{1,V}m_{2,H}(c_V d_H-c_H d_V)\newline
+-m_{1,H}m_{2,V}(c_V d_H-c_H d_V)]
+$$

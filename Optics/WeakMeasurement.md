@@ -1,4 +1,4 @@
-“Observations,” he once wrote, “not only disturb what is to be measured, they produce it.” What Jordan meant is that the wavefunction does not describe reality, but only makes statistical predictions about potential measurements
+
 
 By simply averaging over enough trials, one can establish
 as precise a measure as one has patience for; at least
@@ -39,7 +39,6 @@ striking that we now know that the average result of
 such a measurement will yield exactly what common
 sense would have suggested.
 
-for kindergarten: 코끼리 본뜨기. 코끼리 한마리 몸 전체를 본을 뜨면 코끼리는 죽는다. 그럼 코끼리를 백마리쯤 준비해서 한마리는 코만 본뜨고, 한마리는 귀만 본뜨고, 한마리는 다리만 본뜨고... 그렇게 본뜬 정보를 모은다. 이때 
 
 
 ### reference
