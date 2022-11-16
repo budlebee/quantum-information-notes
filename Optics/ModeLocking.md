@@ -14,6 +14,7 @@ optical cavity 안에는 정상파를 이루는 파장의 빛만 존재하게 �
 
 ![mode locking](./img/modelocking2.png)
 
+![modelockign3](./img/modelockign3.png)
 
 pulse repetition rate 는 레이저 공진기에서 빛이 왕복운동하는데 걸리는 시간의 역수이다.
 
