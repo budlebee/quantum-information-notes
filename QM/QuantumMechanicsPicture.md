@@ -76,8 +76,10 @@ $$
 \frac{dA_I}{dt}=\frac{1}{i\hbar}[A_I,H_{S,0}] + \frac{\partial A_I}{\partial t}
 $$
 
-연산자의 시간변화는 $H_{S,0}$ 와 관련이 돼 있고, 상태함수의 시간변화는 $H_{S,1}$ 와 관련이 있음을 알 수 있다.
+연산자의 시간변화는 $H_{S,0}$ 와 관련이 돼 있고, 상태함수의 시간변화는 $H_{S,1}$(또는 $H_{I,1}$) 와 관련이 있음을 알 수 있다.
 
 # Summary
+
+
 
 ![](./fig/dynamics_pictures.png)
