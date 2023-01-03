@@ -34,6 +34,9 @@ cos{\theta} & sin{\theta} \\
 $$
 
 이므로, 
+
+## fast axis horizontal
+
 $$
 HWP(\theta) = R(\theta)HWP(0)R(-\theta) = e^{-i\pi/2}\begin{pmatrix}
 cos{2\theta} & sin{2\theta} \\
@@ -43,14 +46,14 @@ $$
 
 $$
 QWP(\theta) = R(\theta)QWP(0)R(-\theta) = e^{-i\pi/4}\begin{pmatrix}
-cos^2{\theta}+isin^2{\theta} & (1-i)sin{2\theta} \\
-(1-i)sin{2\theta} & icos^2{\theta}+sin{\theta}
+\cos^2{\theta}+i\sin^2{\theta} & (1-i)\cos{\theta}\sin{\theta} \\
+(1-i)\cos{\theta}\sin{\theta} & \sin^2{\theta}+i\cos^2{\theta}
 \end{pmatrix}
 $$
 
-## Vertical Axis 기준
+## fast axis vertical
 
-Fast axis 가 vertical 을 기준으로 각도 a, b 만큼 배치돼 있을때 존스 매트릭스는 다음과 같다.
+$\cos{\pi/2+\theta} = -\sin{\theta}$, $\sin{\pi/2+\theta} = \cos{\theta}$ 이므로 Fast axis 가 vertical 을 기준으로 각도 a, b 만큼 배치돼 있을때 존스 매트릭스는 다음과 같다.
 $$
 U^v_{HWP}(a) = 
 \begin{bmatrix}
@@ -60,12 +63,31 @@ U^v_{HWP}(a) =
 $$
 
 $$
-U^v_{QWP}(b) = 
-\frac{1}{\sqrt{2}}\begin{bmatrix}
-i-\cos{2b} && \sin{2b}\\
-\sin{2b} && i+\cos{2b}
+U^v_{QWP}(\theta) =e^{-i\pi/4} \begin{bmatrix}
+\sin^2{\theta}+i\cos^2{\theta} && (i-1)\cos{\theta}\sin{\theta}\\
+(i-1)\cos{\theta}\sin{\theta} &&
+\cos^2{\theta}+i\sin^2{\theta}
 \end{bmatrix}
 $$
+
+Kwiat 논문에서 (measurement of qubits)
+$$
+U^v_{HWP}(a) = 
+\begin{bmatrix}
+\cos{2a} && -\sin{2a}\\
+-\sin{2a} && -\cos{2a}
+\end{bmatrix}
+$$
+
+$$
+U^v_{QWP}(\theta) =\frac{1}{\sqrt{2}} \begin{bmatrix}
+i-\cos^2{2\theta} && \sin{2\theta}\\
+\sin{2\theta} &&
+i+\cos^2{2\theta}
+\end{bmatrix}
+$$
+
+
 
 이때 a, b는 빛의 소스쪽에서 웨이브 플레이트를 바라보았을때 반시계방향이 +다.
 
