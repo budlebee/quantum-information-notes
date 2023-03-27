@@ -77,6 +77,9 @@ We will be working on the paraxial regime so it is valid approximation to simply
 
 It will make calculations much simpler if we express the transverse momentum components of the field in terms of Hermite-Gaussian modes, since Gaussian pump beams and similar collection modes of down-converted light are valid descriptions of the light generated in SPDC experiments.
 
+Let say $\vec{k}=\vec{q}+k_z \hat{z}$, where $\vec{q}$ is the projection of the momentum $\vec{k}$ onto the transverse plane.
+
+
 ## References
 
 Introduction to the absolute brightness and number statistics in spontaneous parametric down-conversion

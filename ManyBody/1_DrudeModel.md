@@ -2,6 +2,8 @@ Drude model : Ideal gas of electron
 
 Drude model assume that heavy positive unmove particles(similar to nuclear but Drude model was invented before nuclear discovery)
 
+Drude model assume Boltzmann statistics.
+
 Drude model explains conductivity of metals, but cannot explains insulators.
 
 Drude model explains well $Li^+ + e^-$, $Mg^{2+} + 2e^-$, $Cu^+ + e^-$, $Ag^+ + e^-$, $Au^+ + e^-$, but is not good at $Al^{3+}+3e^-$.
