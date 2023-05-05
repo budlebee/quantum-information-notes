@@ -50,7 +50,7 @@ $$
 H^{(2)}_{NL} = \int d^3r \zeta^{(2)}_{ijl}(r)D_i(r) D_j(r) D_l(r)
 $$
 
-## Field quantization
+### Field quantization
 
 $$
 D = D^{(+)}+D^{(-)}
@@ -73,12 +73,71 @@ $$
 
 We will be working on the paraxial regime so it is valid approximation to simply replace displacement field component indices with polarization indices since the component of the displacement field parallel to the $\vec{\epsilon}$.
 
-## Transforming the Hamiltonian into the Hermite-Gaussian basis.
+## Hermite-Gaussian basis.
 
 It will make calculations much simpler if we express the transverse momentum components of the field in terms of Hermite-Gaussian modes, since Gaussian pump beams and similar collection modes of down-converted light are valid descriptions of the light generated in SPDC experiments.
 
 Let say $\vec{k}=\vec{q}+k_z \hat{z}$, where $\vec{q}$ is the projection of the momentum $\vec{k}$ onto the transverse plane.
 
+we can express plane wave creation operator $\hat{a}^†_{\vec{q},k_z,s}$ as a sum over transverse mode creation operators $\hat{a}^†_{\vec{\mu},k_z,s}$, where $\mu$ is denoting 2D Hermite polynomial mode (n,m), ordered non-negative pair.
+
+Thus,
+
+$$
+\hat{a}^†_{\vec{q},k_z,s} = \sum_{\mu}\tilde{C}_{\vec{q},\vec{\mu}}\hat{a}^†_{\vec{\mu},k_z,s}
+$$
+
+and 
+
+$$
+g_{\vec{\mu}}(x,y)=
+\frac{1}{\sqrt{L_x L_y}}\sum_{\vec{q}}\tilde{C}_{\vec{\mu},\vec{q}}e^{-i\vec{q}\cdot\vec{r}}
+$$
+
+where we have defined $g_{\mu}(x,y)$ to be normalized Hermite-Gaussian wavefunction given by the index $\vec{\mu}$
+
+$L_x$ and $L_y$ are x,y length of cavity for normalization.
+
+Hermite-Gaussian approximation is well behaved when Hermite-Gaussian modes are encomppased by the crystal.
+
+using an paraxial approximation (so that the frequency $w$ only depends on $k_z$), the displacement operator becomes:
+
+$$
+\hat{D}^-(\vec{r},t) = -i\sum_{\vec{\mu},k_z,s}\sqrt{\frac{\epsilon_0 n_{k_z}^2\hbar w_{k_z}}{2L_z}}\hat{\epsilon}_{k_z,s} g_{\mu}(x,y) e^{-i k_z z} \hat{a}^†_{\vec{\mu},k_z,s}e^{iwt}
+$$
+
+Here, $ \hat{a}^†_{\vec{\mu},k_z,s}e^{iwt}=\hat{a}^†_{\vec{\mu},k_z,s}(t)$
+
+With $D$ operator and Non-linear Hamiltonian, we can handle SPDC process.
+
+- We assume that pump light is classical light because pump field is bright enough.
+
+- We assume that pump light is not diminished much due to down-conversion events (known as undepleted pump approximation)
+
+## Classical pump light
+
+Classical pump light can be written as 
+
+$$
+\vec{D}_p(\vec{r},t)=|D_p^0|\vec{\epsilon}_p f_p(\vec{r})\cos{(w_p t)}
+$$
+
+$\vec{\epsilon}_p$ : polarization of pump field, $f_p(\vec{r})$ : spatial function of light.
+
+It can be separated into positive and negative frequency components:
+$$
+\vec{D}^+_p(\vec{r},t)=|D_p^0|\vec{\epsilon}_p f_p(\vec{r})\frac{e^{-iw_pt}}{2}
+\newline
+\vec{D}^-_p(\vec{r},t)=|D_p^0|\vec{\epsilon}_p f_p(\vec{r})\frac{e^{iw_pt}}{2}
+$$
+
+time averaged pump intensity is then :
+
+$$
+I_p = \frac{c}{2\epsilon_0 n^3}|D^0_p|^2|f_p(\vec{r})|^2
+$$
+
+## Phase matching
 
 ## References
 
@@ -94,3 +153,10 @@ input photon (pumped photon), output photon (signal photon, idler photon)
 
 만약 아웃풋 포톤 두개의 polarization 이 인풋과 같으면 type 0, 아웃풋 포톤 두개는 서로 같지만 인풋과는 orthogonal 하면 type 1, 그리고 아웃풋 포톤 두개가 서로 orthogonal 하면 (Horizontal 과 Vertical 처럼) type 2 SPDC.
 
+$$
+E\rightarrow\hat{E}=\hat{E}^+ +\hat{E}^-
+$$
+
+$$
+H_{SPDC}= \int dr^3 \chi^{(2)}\hat{E}^+_p \hat{E}^-_s \hat{E}^-_i
+$$
