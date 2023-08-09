@@ -59,7 +59,13 @@ $$
 다음과 같은 4큐빗 클러스터 상태를 준비한 후, 싱글 큐빗 gate 와 measurement feed-forward 를 수행하면 4, 3번 큐빗을 control, target qubit 으로 삼았을때 CNOT gate 를 걸어준 결과가 나온다.
 ![CNOT.png](./img/CNOT.png)
 
+2, 3번 큐빗은 $\ket{+}$ 상태로 준비한 다음, 12, 23, 24 큐빗에 C-Phase gate 를 걸어줘서 cluster state 를 준비한다. 
 
-결과적으로 단일 큐빗 연산과 측정만으로도 CNOT 같은 2 qubit 게이트를 구현할 수 있다. 광학 기반의 시스템은 CNOT 게이트의 구현이 쉽지 않은데(빛은 다른 빛과 잘 상요작용 하지 않기때문), 이런 cluster state 기반의 MBQC 는 single qubit operation 만으로도 CNOT 과 같은 결과를 만들 수 있으니 DV 기반 양자컴퓨팅은 MBQC 를 목표로 하고 있다. 
+$$
+\ket{\psi_{cl}} = 
+$$
 
-맨 처음 C-Phase 게이트를 통해 cluster 상태를 만드는게 가장 큰 overhead다.
+
+결과적으로 단일 큐빗 연산과 측정만으로도 CNOT 같은 2 qubit 게이트를 구현할 수 있다. 광학 기반의 DV 시스템은 CNOT 게이트의 구현이 쉽지 않은데(빛은 다른 빛과 잘 상호작용 하지 않기때문), 이런 cluster state 기반의 MBQC 는 single qubit operation 만으로도 CNOT 과 같은 결과를 만들 수 있으니 DV 기반 양자컴퓨팅은 MBQC 를 목표로 하고 있다. 
+
+맨 처음 C-Phase 게이트를 통해 커다란 cluster 상태를 만드는게 가장 큰 overhead다.
