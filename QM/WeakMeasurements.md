@@ -62,3 +62,4 @@ $e^{-iA_w \hat{p}}$ 가 위치 translation operator 이므로, 우리 측정기�
 또한 이런 approximation 은 higher-order terms 를 무시했기 때문에 유효한 것이기에, 오버랩을 너무 작게 해서 $A_w$ 값이 너무 커지면 break down 이 일어난다. 
 
 이런 weak value 를 이용한 메트롤로지는 비유적으로 표현하자면 통계적인 세척이라고 볼 수 있는데, 1/f 노이즈 같은 몇몇 노이즈에 대해서 이득을 얻을 수 있다고 한다.
+
