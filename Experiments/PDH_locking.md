@@ -55,6 +55,8 @@ $P_c=|J_0(\beta)E_0|^2$ 와 $P_s=|J_1(\beta)E_0|^2$ 는 carrier 와 sideband 의
 
 여기서 관심 있는 것은 $ F(\omega)F^*(\omega+\Omega) -F^*(\omega)F(\omega -\Omega)$ 에 대한 정보가 담긴 $\cos$ 와 $\sin$ term 이다.
 
+## Mixing with modultation signal
+
 각속도 $\Omega'$ 의 어떤 sinusoidal input 과  oscillator 가 만들어낸 modulation 신호 $\sin\Omega t$ 를 mixer 로 곱해주면, 
 
 $$
@@ -71,6 +73,68 @@ $\cos$ input 을 활용하고자 한다면 phase delay 조정이 필요하다 (�
 
 모듈레이션 주파수 $\Omega$ 가 작냐 크냐에 따라 $ F(\omega)F^*(\omega+\Omega) -F^*(\omega)F(\omega -\Omega)$ 값이 purely real 이냐 purely imaginary 이냐 가 바뀐다. 
 
-캐비티의 공명 주파수를 $F$ 라고 할때, $\Omega \ll \triangle \nu_{FSR}/F$ 면 purely real 이라 $\cos$ 성분이 살아남고, $\Omega \gg \triangle \nu_{FSR}/F$ 면 purely imaginary 라 $\sin$ 성분이 살아남는다. 
+캐비티의 finesse 를 $\mathcal{F}$ 라고 할때, $\Omega \ll \triangle \nu_{FSR}/\mathcal{F}$ 면 purely real 이라 $\cos$ 성분이 살아남고, $\Omega \gg \triangle \nu_{FSR}/\mathcal{F}$ 면 purely imaginary 라 $\sin$ 성분이 살아남는다. 
 
-실제 상황에선 모듈레이션 속도를 빠르게 해서 $\sin$ 성분을 사용한다.
+실제 상황에선 모듈레이션 속도를 빠르게 해서 $\sin$ 성분을 사용한다. 다음 그림과 같은 에러 시그널을 얻을때까지 레이저 주파수를 스캔하고 페이즈를 조정한다.
+
+![](./img/pdh_fast.png)
+
+## Fast modulation
+
+modulation frequency $\Omega$ 가 크다면, sideband 성분들은 Fabry-Perot 캐비티를 통과하지 못하고 대부분 반사될 것이므로 $F(\omega \pm\Omega)\simeq -1$ 이다.
+
+따라서,
+
+$$
+ F(\omega)F^*(\omega+\Omega) -F^*(\omega)F(\omega -\Omega) \simeq -2iIm[F(\omega)]
+$$
+
+purely imaginary 가 되고 $\sin$ 성분만 살아남는다.
+
+cavity resonance 근처에서는 $|F(\omega)|^2\simeq 0$ 일테니 $F(\omega)$ 의 first order 까지만 고려한다면 
+
+$$
+P_{refl}\simeq 2P_s -4\sqrt{P_c P_s}Im[F(\omega)]\sin\Omega t +O(2\Omega)
+$$
+
+가 된다. 이때 resonance 근처라고 한다면, $\omega$는 $\triangle \nu_{FSR}$ 의 $N$ 배수 근방이라는 뜻이므로,
+
+$$
+\frac{\omega}{\triangle\nu_{FSR}}=2\pi N +\frac{\delta \omega}{\triangle \nu_{FSR}}
+$$
+
+이 된다.
+
+$$
+F(w)\equiv \frac{E_{refl}}{E_{inc}} = \frac{r\left(e^{iw/\triangle \nu_{FSR}}-1 \right)}{1-r^2 e^{iw/\triangle \nu_{FSR}}}
+$$
+
+이었으므로, $e^{iw/\triangle \nu_{FSR}}=e^{i\delta\omega/\triangle\nu_{FSR}}$ 이 되고, 다음과 같은 3개의 근사법으로 식을 정리한다.
+
+#### approximation 1
+$$
+\frac{1}{1-r^2 e^{i\delta\omega/\triangle \nu_{FSR}}}=1+r^2 e^{i\delta\omega/\triangle \nu_{FSR}}+r^4 e^{2i\delta\omega/\triangle \nu_{FSR}}+...
+$$
+
+#### approximation 2
+
+$\delta\omega \ll \triangle\nu_{FSR}$ 이므로 $e^{i\delta\omega/\triangle \nu_{FSR}}\simeq 1+i\frac{\delta\omega}{\triangle\nu_{FSR}}$ 
+
+#### approximation 3
+
+high finesse cavity 는 $\mathcal{F}\simeq \pi/(1-r^2)$
+
+이 세가지 근사법을 취하면 최종적으로 
+
+$$
+F \simeq r \frac{i}{\pi}\frac{\delta\omega}{\delta\nu}\simeq \frac{i}{\pi}\frac{\delta\omega}{\delta\nu}
+$$
+
+여기서 $\delta \nu \equiv \triangle\nu_{FSR}/\mathcal{F}$ 로, cavity resonance 주파수의 폭이 된다.
+
+mixing 과정과 low pass filter 를 거치면 살아남은 $\sin$ term 이 피드백에 쓰일 error 시그널이 된다.
+
+$$
+\epsilon \simeq -\frac{4}{\pi}\sqrt{P_c P_s}\frac{\delta \omega}{\delta \nu}
+$$
+
