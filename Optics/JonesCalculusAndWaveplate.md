@@ -135,3 +135,5 @@ $$
 이때 빛이 관찰자쪽으로 다가오는 상황에서 편광을 관찰했을때, 편광이 시계방향으로 돌아가면 R 편광, 반시계로 돌아가면 L 편광이다.
 
 ![circularPol.png](./img/circularPol.png)
+
+단, 분야에 따라 컨벤션이 다르다. 광학에서는 위와 같이 정의하지만, 입자물리에서는 LCP 를 positive helicity 로 정의하고, IEEE 에서는 Right handed 로 정의한다.
