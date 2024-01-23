@@ -137,7 +137,6 @@ $$
 I_p = \frac{c}{2\epsilon_0 n^3}|D^0_p|^2|f_p(\vec{r})|^2
 $$
 
-## Phase matching
 
 ## References
 

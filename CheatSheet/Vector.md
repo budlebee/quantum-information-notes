@@ -7,6 +7,10 @@ $$
 $$
 
 $$
+(A\times B)\cdot C = A\cdot(B\times C)
+$$
+
+$$
 \ket{A}\bra{B}\otimes \ket{C}\bra{D} = \ket{AC}\bra{BD}
 $$
 
