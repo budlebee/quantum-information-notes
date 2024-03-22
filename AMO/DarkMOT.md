@@ -21,3 +21,6 @@ repumping 에는 다음과 같은 문제점이 있다.
 ![](./img/DarkMOT.png)
 
 원자들은 99%의 시간을 cooling laser 에 반응하지 않는 Dark fyperfine state 에 머무른다. Dark MOT.
+
+
+P.S. Na의 D-line 에서 D 는 Fraunhofer lines 에서 따왔다고 한다. Fraunhofer 는 태양빛의 흡수선 스펙트럼을 분석하고, absorption line 을 빨간색부터 순서대로 A, B, C, D.. 라고 이름 붙였는데, Na 의 가시광선 영역대인 노란색 빛이 D 라서 D-line 이라고 한다. Na 뿐만 아니라 다른 알칼리 금속들도 D-line 이라고 부르고 data sheet 을 찾아볼 수 있다.
