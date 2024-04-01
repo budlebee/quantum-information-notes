@@ -41,3 +41,4 @@ Metasurface 물질과 time-dependent system engeering (시간에 따라 물질 r
 그리고 파라미터를 조절하면 qubit 의 spatial 한 wave function 이 퍼지는 정도를 조절할 수 있고, 그래서 two qubit interaction 을 구현할 수 있게됨.
 
 all-to-all connection 은 아니게 되지만, trade-off 가 있는 듯.
+
