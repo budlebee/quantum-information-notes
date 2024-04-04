@@ -1,4 +1,3 @@
-아래 내용 다 코파일럿이 써준거임.. 나중에 수정.
 
 # Lamb dip
 
@@ -7,6 +6,17 @@
 ![](./img/LambDip.png)
 
 펌프 빔을 바꿔가며 프로브 빔을 스캔.
+
+Lamb dip 의 width 는 kHz 정도로, 보통 원자들의 natural line width MHz 보다도 훨씬 좁다. 그래서 frequency lock 을 하는데 많이 사용한다. 펌핑이랑 프로브의 frequency 가 같게 하고 둘이 transition frequency 에 위치하게 된다면 absorption peak 정중앙에 딥이 생긴다.
+
+3레벨 원자에서 crossover 딥이 생기는 이유: 펌핑빔이 올려놓은 kv 와 -kv 성분들에 대해 프로브빔이 스캔할때 두가지 성분에 대한 영향을 둘다 받아서, 가운데에 큰 딥이 생긴다. 
+
+여기상태가 두개면 crossover 에 딥이 생기고, 바닥상태가 두개면 crossover 에 inverted dip 이 생긴다.
+
+SAS 프로그램들은 대개 dip 신호를 반전시켜서 출력하기에 실제 모양과 반대로 보인다.
+
+
+아래 내용은 다 코파일럿이 써준거임.. 나중에 수정.
 
 ## Introduction
 
