@@ -118,5 +118,3 @@ $$
 $$
 n_c \simeq 2.3 \frac{m^{3/2}}{\sqrt{2}\pi^2 \hbar^3}(k_B T)^{3/2} \simeq 2.6 \frac{1}{\lambda_T^3}
 $$
-
-## Density and momentum distribution in 3D harmonic trap
