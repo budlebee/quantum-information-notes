@@ -23,8 +23,10 @@ $$
 이때 우리가 알고 싶은 것은 asymtotically free, positive energy solution 이므로 풀고자하는 방정식은
 
 $$
-\hat{H}\psi_k=E_k\psi_k \quad \text{where}\quad E_k = \frac{\hbar^2k^2}{2m} 
+\hat{H}\psi_k=E_k\psi_k \quad \text{where}\quad E_k = \frac{\hbar^2k^2}{2m_r} 
 $$
+
+여기서 $m_r=m_1 m_2/(m_1+m_2)$ 는 reduced mass 이다.
 
 해당하는 Ansatz solution 은 다음과 같다.
 
@@ -116,6 +118,6 @@ $\kappa\sim \sqrt{V_0}$.
 
 포텐셜이 $V_0>0$ 인 경우, $\kappa$ 가 작다면 scattering length 가 포텐셜의 유효거리에 비해 매우 작지만(포텐셜을 무시하듯 상호작용한다), $\kappa$ 가 크다면 스캐터링 length 가 포텐셜의 유효거리 b 와 거의 같아진다 (hard barrier).
 
-(uncertain: 포텐셜이 $-V_0<0$ 인 경우에는, $\kappa b$ 가 특정값일 때마다 scattering length 가 발산하는 resonance 포인트가 생긴다. $a \to -\infty$ 라면 $\chi \to 0$ 라고 볼 수 있으므로, 모든 wavefunction 이 $r<b$ 에 존재하는 bound state 가 생긴다.)
+포텐셜이 $-V_0<0$ 인 경우에는, $\kappa b$ 가 특정값일 때마다 scattering length 가 발산하는 resonance 포인트가 생긴다. $a \to -\infty$ 라면 $\chi \to 0$ 라고 볼 수 있으므로, 모든 wavefunction 이 $r<b$ 에 존재하는 bound state 가 생긴다.
 
-## Feshbach resonance
+Bound state -> quantized energy level. 
