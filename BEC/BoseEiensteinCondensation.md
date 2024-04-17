@@ -55,7 +55,7 @@ $$
 3D simple harmonic oscillator 의 에너지는
 
 $$
-epsilon = (\frac{1}{2}+n_x)\hbar \omega_x +(\frac{1}{2}+n_y)\hbar \omega_y+(\frac{1}{2}+n_z)\hbar \omega_z
+\epsilon = (\frac{1}{2}+n_x)\hbar \omega_x +(\frac{1}{2}+n_y)\hbar \omega_y+(\frac{1}{2}+n_z)\hbar \omega_z
 $$
 
 에너지가 $\hbar\omega_i$ 에 비해 커서 zero-point 에너지를 무시할 수 있다면, $\epsilon_i=\hbar\omega_i$ 이고 $\epsilon = \epsilon_x+\epsilon_y+\epsilon_z$ 이므로 total number of states 는 다음과 같이 쓸 수 있다.
