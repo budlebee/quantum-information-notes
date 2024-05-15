@@ -44,7 +44,7 @@ $$
 $$
 
 $$
-A_I(t)=e^{iH_{S,0} t /\hbar}A_S(t)e^{-iH_{S,0} t /\hbar}
+A_I(t)=e^{iH_{S,0} t /\hbar}A_Se^{-iH_{S,0} t /\hbar}
 $$
 
 > time evolution 에서 $i$ 의 부호를 주의할 것.
