@@ -1,6 +1,6 @@
 ## Quantum Non-Demolition Measurement (QND)
 
-양자 상태를 어떤 특정 상태로 projection 시키면서 파괴하지 않고 알아내는 방법. 편광기반의 양자 상태는 포톤 디텍터가 광자를 흡수하면 해당 광자를 더 이상 사용할 수가 없는데, 초전도회로에서는 양자 상태를 0이나 1로 프로젝션 한 다음에도 양자상태가 0이나 1로 계속 유지가 된다.
+Repeatability of measurement outcome. 어떤 양자 상태를 처음으로 측정할 때 $k_0$ 라는 값이 나왔다면, 해당 양자상태를 그대로 둔 다음 측정할때도 $k_0$가 나오는 경우.
 
 ## Dispersive Readout
 
@@ -50,7 +50,7 @@ where $\tan{\theta} = 2g\sqrt{n+1}/\triangle$.
 
 ### Dispersive regime
 
-$\triangle \gg g$ 인 dispersive regime 에서, eigenenergy 와 해밀토니안을 up to first order 까지 binomial expansion 한다면
+$\triangle \gg g$ 인 dispersive regime 에서, resonator 의 포톤 넘버가 작다면 square root term 을 first order 까지 binomial expansion 할 수 있다. 
 
 $$
 E_{\pm} = \left(n+\frac{1}{2}\right)\hbar\omega_r \pm \frac{\hbar}{2} \sqrt{\triangle^2 +4g^2 (n+1)}\\
@@ -63,10 +63,12 @@ $$
 H\simeq \left(N_{ex}-\frac{1}{2}\right)\hbar\omega_r + \sigma_z \hbar\triangle \left[\frac{1}{2} + \left( \frac{g}{\triangle} \right)^2 N_{ex}\right]
 $$
 
-Dispersive shift $\chi = g^2/\triangle$ 을 정의하고, 에너지 오프셋을 무시한 해밀토니안을 쓰면 
+Dispersive shift $\chi = g^2/\triangle$ 을 정의하고, 대응되는 해밀토니안을 쓰면 
 
 $$
 H_{disp} = \hbar(\omega_r +\chi \sigma_z)a^\dagger a +\frac{1}{2}\hbar(\omega_q +\chi)\sigma_z
 $$
+
+여기서 주의할 점은 $\sigma_z$ 는 dressed qubit 에 대한 $\sigma_z$ 이다.
 
 즉 큐빗의 상태가 $|e\rangle$ 이라면 resonator peak 이 $\omega_r+\chi$ 에서 나타나고, 큐빗의 상태가 $|g\rangle$ 이라면 resonator peak 이 $\omega_r-\chi$ 에서 나타난다. 큐빗 상태에 따라 resonator peak 이 달라지는 것을 이용해 큐빗 상태를 읽어내는 것을 dispersive readout 이라고 한다.
