@@ -1,6 +1,8 @@
 
 # EMCCD
 
+![](./img/CCD_geometry.png)
+
 ![](./img/EMCCD1.png)
 
 두개의 층의 센서. 이미지 센서랑 스토리지 센서. 이미지 센서는 빛에 노출되고, 스토리지 센서는 빛에 노출되지 않음.
@@ -27,16 +29,32 @@ photoelectron 들이 스토리지 영역이나 EM 레지스터로 움직일때 �
 
 EMCCD 에서 전자를 이동시키기위해 센서에 clock signal을 보내는데, 이때 clock signal 의 위상이 반전된 inverted phase 가 생길경우 실리콘 센서칩에 hole 이 생기고, 이렇게 생긴 홀은 clock signal 이 끝날때 가속되고, 가속된 hole 은 실리콘 아톰에 부딪혀 칩에서 신호를 만들게 된다.
 
-vertical clock 을 빠르게 하는게 CIC 를 낮게 한다는데, 왜지??
+vertical clock 을 빠르게 하는게 CIC 를 낮게 한다는데, 왜지?? 쉬프트를 빠르게 하면 CIC가 줄어든다. 
+
+포톤 스파이크는 근방에 모인 픽셀들의 그룹으로 나타나는데 CIC 는 그렇지 않으니까 신호와 노이즈를 구분할 수 있다는 거 같다 (In practical terms, ultra-weak signals of the single photon nature would be distinguishable from CIC spikes in that one could generally expect to see 'groupings' of photon spikes from adjacent pixels, even from diffraction limited single molecule emissions.)
+
+### parallel CIC (pCIC), serial CIC (sCIC)
+
+* pCIC: 이미지센서에서 신호가 평행하게 쉬프트 하는 과정에서 생기는 CIC 노이즈.
+
+* sCIC: 증폭을 시키는 serial register 에서 전하를 이동시킬때 발생하는 CIC. 노이즈가 발생하는 지점에 따라 노이즈가 증폭되는 정도가 다를 것이라서 stochastic 하게 나타난다.
+
+![](./img/sCICpCIC.png)
+
+## Overal noise = Shot noise x 1.41
 
 ## Photon counting mode in Andor
 
 Photon counting 모드는 싱글포톤 신호의 정확한 세기를 측정하는게 아니라, 어떤 문턱값 넘어가는 것만 측정하는 모드임.
 
-SNR 이 sqrt(2) 만큼 증가한다고 함.
+
 
 ## Ref
 
 https://www.youtube.com/watch?v=2lHrdGxX5ew
 
 https://en.wikipedia.org/wiki/Back-illuminated_sensor
+
+http://www.qucam.com/assets/tn1.pdf
+
+https://andor.oxinst.com/learning/view/article/sensitivity
