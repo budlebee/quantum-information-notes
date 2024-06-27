@@ -1,7 +1,38 @@
+## Silicon sensor
+
+Photoelectric effect. 실리콘의 밴드갭 1.26eV 인데, 대략 $1\mu m$ 의 광자의 에너지 정도이므로 visible 영역의 광자는 실리콘 CCD 로 측정할 수 있다. 
+
+## Structure of CCD
+
+비유: 비가 올때 컨베이어 벨트 위에 올라와 있는 양동이들.
+
+![](./img/CCDanalogy.png)
+
+셔터가 닫히면 컨베이어 벨트를 움직여서 물을 측정통에 부어서 픽셀바이 픽셀 담긴 물의 양을 측정한다.
+
+![](./img/CCDpixel.png)
+
+Polysilicon 으로 이루어진 투명 전극 3개가 한 셋트로 CCD 픽셀을 구성한다. 두개의 전극은 high voltage, 하나는 low voltage 라서 potential well 을 구성해서 photo-electon 들을 가운데로 모은다. channel stop 은 수직방향으로 픽셀을 구분하는 역할을 해준다.
+
+각 전극에 걸리는 전압을 바꿔주면, 전하는 전압이 만들어낸 포텐셜을 따라 움직이므로, 각 픽셀에 잡혀있는 전하들을 이동시킬 수 있다. charge transport 효율은 0.999999 정도다.
+
+![](./img/CCDsaturation.png)
+
+CCD 가 saturation 되면 전하가 column 방향으로 넘쳐 흘러서 위의 사진처럼 길다란 꼬리 노이즈를 만든다.
+
+## Frame-transfer CCD (FTCCD)
+
+![](./img/CCD_geometry.png)
+
+CCD 의 아래쪽 절반을 불투명한 store 영역으로 쓰는 것. 25Hz 이상으로 빠르게 이미징을 하기 위해서 쓰인다. 기계적인 셔터는 빠른속도로 반복동작하면 신뢰성이 떨어진다.
+
+![](./img/FTCCD.png)
+
+FTCCD 의 실제 모습. 회색영역이 빛을 받는 영역이고, 은색이 저장영역으로써 알루미늄 light shield 처리된 부분이다. ms 속도로 이미징이 가능하다. 대부분의 EMCCD는 FTCCD 다.
 
 # EMCCD
 
-![](./img/CCD_geometry.png)
+
 
 ![](./img/EMCCD1.png)
 
