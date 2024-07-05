@@ -30,5 +30,13 @@ Pauli 원리에 의해 같은 상태의 Fermion 끼리는 s-wave scattering 을 
 
 두개의 가장 낮은 hyperfine 상태의 리튬을 optical trap 으로 붙잡는 경우, 로스 메커니즘은 dipolar relaxation 인데, FB resonance 근처에서도 dipolar relaxation 로스가 작다. 그 이유를 추측하기로는 리튬의 경우 하이퍼파인 에너지가 작고, 질량이 작고 van der Waals coefficient $C_6$가 작아서 d-wave exit channel에 대한 centrifugal barrier 가 높기 때문이라고 한다 (?).
 
+by THkim: centrifugal potential 의 경우 
+
+$$
+\hat{V}=V+\frac{\hbar^2}{2\mu}\frac{l(l+1)}{r^2}
+$$
+
+이때 selection rule 에 의해서 $\triangle L =0,2$ 인데 dipolar relaxation 은 motional angular momentum 에 의한 것, 즉 $\triangle L =2$ 인 경우(d-wave). 이때 van der Waals 반지름이  $r_0\simeq (mC_6/\hbar^2)^{1/4}$ 라서 작고, centrifugal potential 에서 $r$이 작으니 centrifugal barrier 가 크다고 말하는 것.
+
 Na-Li 의 경우 커다란 DFG 를 만드는데 좋은 특성들을 갖고 있다고 한다.
 

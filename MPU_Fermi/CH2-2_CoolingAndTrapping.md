@@ -14,7 +14,7 @@ $$
 
 sag 를 줄이려면 트랩 프리퀀시를 올려야 하지만 그러면 three-body loss 가 심해짐.
 
-Fermion 이 Boson 보다 숫자가 많으면 냉각효율 떨어짐.
+Fermion 이 Boson 보다 숫자가 많으면 냉각효율 떨어짐 (why?).
 
 DFG 의 경우 Fermi sea 에서의 hole excitation 때문에 background gas collision 같은 로스에 더 취약하다고 한다(why? ref: Degenerate Fermion Gas Heating by Hole Creation)
 
@@ -94,6 +94,8 @@ $\omega_z$ 를 높이는 것은 어려움. 코일의 전류를 올리면 손실�
 
 
 ## Questions
+
+* Fermion 이 Boson 보다 숫자가 많으면 냉각효율 떨어짐 (why?).
 
 * DFG 의 경우 Fermi sea 에서의 hole excitation 때문에 background gas collision 같은 로스에 더 취약하다고 한다(why? ref: Degenerate Fermion Gas Heating by Hole Creation)
 
