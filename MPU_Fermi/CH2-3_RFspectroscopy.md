@@ -34,7 +34,9 @@ RF pulse 를 쓰든 field sweep 을 쓰든 샘플은 여전히  coherent 를 유
 
 ## Clock shift
 
-원자끼리의 상호작용으로 인한 density dependent shift. 이름의 유래는 atomic clock 에서 발견돼서 clock shift 라고 한다.
+원자끼리의 상호작용으로 인한 density dependent shift. 이름의 유래는 atomic fountain clock 의 리밋을 결정해서 clock shift 라고 한다. mean-field shift, collisional shift 등으로도 불린다.
+
+virtual scattering process 로, $U_0^2$ 에 비례하는 실제 스캐터링 과정과는 다르게 $U_0$ 에 비례한다.
 
 two-state Fermi mixture 에서는 clock shift 가 없다고 하는데(why?), three-component 에서는 있다고 한다.
 
