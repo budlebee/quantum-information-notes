@@ -72,6 +72,10 @@ vertical clock 을 빠르게 하는게 CIC 를 낮게 한다는데, 왜지?? 쉬
 
 ![](./img/sCICpCIC.png)
 
+## Multiplicative noise
+
+게인레지스터에서 전하가 이동할때 확률적으로 발생하는 impact ionization 으로 인한 노이즈. shot noise 의 $sqrt{2}$ 배로 여겨진다(복잡한 이론적인 모델링 설명을 읽어보라고 하는데 못읽겠다 A Stochastic Model for Electron Multiplication Charge-Coupled Devices – From Theory to Practice, 2013)
+
 ## Overal noise = Shot noise x 1.41
 
 ## Photon counting mode in Andor

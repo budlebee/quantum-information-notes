@@ -44,8 +44,29 @@ two-state Fermi mixture 에서는 clock shift 가 없다고 하는데(why?), thr
 
 하지만 RF pulse 를 이용한 transition 은 coherent 하게 $|1\rangle$ 상태를 $\cos{\alpha}|1\rangle + e^{i\phi}\sin{\alpha}|2\rangle$ 로 전환하는 것. 그래서 clock shift 를 느끼지 않는다. RF spectroscopy 실험에서도 two-component Fermi gas 에서는 clock shift 가 없음이 보여졌다. 
 
+RF 로 인한 rotation 은 energy hamiltonian 과 commute 하다. 그래서 no shift.
+
 ### Absence of clock shift in incoherent two-component Fermi mixture
 
 하지만 incoherent 한 two-component Fermi mixture 에서도 clock shift 가 없다(ref: Spectroscopic Insensitivity to Cold Collisions in a Two-State Mixture of Fermions, 2003). 
 
 many-body 시스템에서 상호작용 에너지는 coherent collision(들어오는 두 입자의 상태와 나가는 두 입자의 상태가 같은 것)으로 결정된다. 그럼 이 경우 두 입자는 (1)각자의 운동량을 보존하거나, 아니면 (2)서로의 운동량을 교환하거나 두가지 뿐이다.
+
+-> 관련 레퍼런스 읽어보았지만 아직도 왜 RF 가 coherence 를 re-introduce 하는지 납득이 안됨. 
+
+### RF 실험에서 6Li의 특별함
+
+6Li는 hyperfine interaction 이 작아서 수백 가우스 정도면 nuclear spin 과 electron spin 을 decouple 할 수 있다. 또한 nuclear spin 만 뒤집는 transition 이 weak field sensitivity 를 갖고 있다.
+
+예를 들면, 600G 이상에서 1-2 resonance 의 field dependence 는 2.7kHz/G 보다 작다. 그에 반면 40K 같은 경우 202G Feshbach resonance 근처에서 2-3 transition 의 field dependence 는 170kHz/G 나 된다.
+
+
+## Decoherence
+
+* RF 는 decoherence 를 만들지 않음
+
+* 원자가 불균일한 trap 을 지나면 각기 다른 phase 를 갖게 됨. 
+
+* incoherent mixture 가 된다면 더이상 같은 quantum state 가 아니게 되므로, 원자들끼리 s-wave scattering 을 할 수 있게 됨.
+
+* decoherence time scale 은 대략 수십 ms.
