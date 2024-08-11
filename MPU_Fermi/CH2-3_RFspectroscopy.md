@@ -53,6 +53,14 @@ RF 로 인한 rotation 은 energy hamiltonian 과 commute 하다. 그래서 no s
 many-body 시스템에서 상호작용 에너지는 coherent collision(들어오는 두 입자의 상태와 나가는 두 입자의 상태가 같은 것)으로 결정된다. 그럼 이 경우 두 입자는 (1)각자의 운동량을 보존하거나, 아니면 (2)서로의 운동량을 교환하거나 두가지 뿐이다.
 
 -> 관련 레퍼런스 읽어보았지만 아직도 왜 RF 가 coherence 를 re-introduce 하는지 납득이 안됨. 
+-> 아마도 RF pulse 가 일종의 projection 역할을 하면서, RF 가 들어온 순간을 기준으로 새로운 quantum state 가 preparation 되는 거라고 생각함.
+
+### Second correlation function $g^{(2)}$ and scattering
+- mean-field interaction 은 s-wave scattering 이고, scattering factor 에 곱해지는 g2 값은 system 에 따라 다르다 
+- g2 값을 계산할때, 파동함수를 Fock basis 로 적어서 계산하면 thermal distribution 의 boson 의 경우 g2=2, Coherent state 의 경우 g2=1 임. 그리고 아마 Fermion annihilation, creation 의 경우 anti commutation 일 것이므로 g2=0 일 것임. 
+- Boson 의 경우 fully polarized state 나 superposition 상태나 둘다 g2=1.
+- Fermion 의 경우도 마찬가지로, 둘 다 g2=0임 (no mean-field shift)
+
 
 ### RF 실험에서 6Li의 특별함
 

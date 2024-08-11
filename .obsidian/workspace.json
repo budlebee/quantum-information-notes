@@ -1,0 +1,163 @@
+{
+  "main": {
+    "id": "6d61c5af91a6686a",
+    "type": "split",
+    "children": [
+      {
+        "id": "fcb05fb2595f4f74",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3ff7715b51c16e72",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "BEC/FeshbachResonance.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4048ee7d0bd36b71",
+    "type": "split",
+    "children": [
+      {
+        "id": "aa19c54532957783",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d5a225b97a0119cc",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "00683dcfb50dd315",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0308c4a9594c4d78",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0a115884b2c4c3fc",
+    "type": "split",
+    "children": [
+      {
+        "id": "99c119b9c8259697",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bfff6d8afe8ea013",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "BEC/FeshbachResonance.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d128cf205721514e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "BEC/FeshbachResonance.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5b988b3a25ed1d62",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "a83c7e3f78e9eee5",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "BEC/FeshbachResonance.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "3ff7715b51c16e72",
+  "lastOpenFiles": [
+    "CheatSheet/Lithium6.md",
+    "CheatSheet/img/Li6groundStates.png",
+    "CheatSheet/img/Li6 ground states.png",
+    "BEC/FeshbachResonance.md",
+    "CheatSheet/Matrix.md",
+    "BEC/ScatteringLength.md",
+    "BEC/IndistinguishableStatistics.md",
+    "BEC/Thomas-FermiApproximation.md",
+    "MPU_Fermi/CH2-4_FeshbachResonance.md",
+    "MPU_Fermi/CH2-3_RFspectroscopy.md",
+    "Electromagnetics/MagneticTrap.md"
+  ]
+}

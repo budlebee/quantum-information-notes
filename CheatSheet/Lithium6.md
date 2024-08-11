@@ -12,6 +12,15 @@ Ref 2
 * Recoil velocity $9.89 cm/s$
 * Recoil temperature $3.536 \mu K$
 
+## Hyperfine ground states at Paschen-Back regime
+
+- Li6 는 hyperfine interaction 이 약하기 때문에 자기장이 약 300G 이후로 부터는 핵스핀과 전자스핀이 decoupled. 기울기는 1.4MHz/G.
+- $|m_S,m_I\rangle$ basis 로 표현하면
+![[Li6groundStates.png]]
+
+
+
+
 ## References
 
 1. Absolute Frequency Measurement of 6Li D Lines with khz-Level Uncertainty, 2020
